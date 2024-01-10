@@ -57,7 +57,34 @@ function handleSearchSubmit(event) {
   searchCity(searchImput.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast" id="forecast">
+          <div class="weather-forecast-day">${day}</div>
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
+            width="50" class="weather-forecast-icon"
+          />
+          <div class="weather-forecast-temperature">
+            <div><strong>16°</strong></strong></div>
+            <div>10°</div>
+            </div>
+            </div>
+          </div>
+        </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity(`Salvador`);
+displayForecast();
