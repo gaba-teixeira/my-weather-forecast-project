@@ -94,3 +94,21 @@ a {
   margin-top: 6px;
   font-size: 28px;
 }
+
+.weather-forecast {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.weather-forecast-day {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-temperature {
+  color: #f65282;
+  margin-top: 10px;
+  font-size: 14px;
+}
