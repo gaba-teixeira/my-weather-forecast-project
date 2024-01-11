@@ -66,16 +66,18 @@ function displayForecast() {
       forecastHtml +
       `<div class="weather-forecast" id="forecast">
           <div class="weather-forecast-day">${day}</div>
+          <div class="weather-forecast-icon">
           <img
             src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
-            width="50" class="weather-forecast-icon"
+            width="50" 
           />
-          <div class="weather-forecast-temperature">
-            <div><strong>16°</strong></strong></div>
-            <div>10°</div>
-            </div>
-            </div>
           </div>
+          <span class="weather-forecast-temperature">
+            <span><strong>16°</strong></strong></span>
+            <span>10°</span>
+            </span>
+      
+          
         </div>`;
   });
 
